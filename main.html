@@ -5,42 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
     <link rel="stylesheet" href="style.css" />
-	  <td style="background-color: black; color: white;">HTML</td>
   </head>
   <body>
     <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
+      <!-- Nested tables go here -->
+	  <tr>
+		<td>
+		  <!-- First nested table -->
+		  <table>
+			<tr>
+			  <th>Nested Table 1</th>
+			</tr>
+			<tr>
+			  <td>Content</td>
+			</tr>
+		  </table>
+		</td>
+		<td>
+		  <!-- Second nested table -->
+		  <table>
+			<tr>
+			  <th>Nested Table 2</th>
+			  <th>Column 1</th>
+			  <th>Column 2</th>
+			</tr>
+			<tr>
+			  <td>Content</td>
+			  <td>Content</td>
+			  <td style="background-color: black; color: white;">HTML</td>
+			</tr>
+		  </table>
+		</td>
+	  </tr>
+	  <!-- Similarly, you can add more rows for more nested tables -->
     </table>
-	 <table>
-  <tr>
-    <td>
-      <!-- First nested table -->
-      <table>
-        <tr>
-          <th>Nested Table 1</th>
-        </tr>
-        <tr>
-          <td>Content</td>
-        </tr>
-      </table>
-    </td>
-    <td>
-      <!-- Second nested table -->
-      <table>
-        <tr>
-          <th>Nested Table 2</th>
-          <th>Column 1</th>
-          <th>Column 2</th>
-        </tr>
-        <tr>
-          <td>Content</td>
-          <td>Content</td>
-          <td>Content</td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <!-- Similarly, you can add more rows for more nested tables -->
-</table>
   </body>
 </html>

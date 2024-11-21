@@ -1,182 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=“en”>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tables in Tables</title>
+<meta charset=“UTF-8”>
+<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+<title>Tables in Tables</title>
+<style>
+table {
+width: 100%;
+border-collapse: collapse;
+}
+th, td {
+border: 1px solid black;
+padding: 10px;
+text-align: left;
+}
+</style>
 </head>
 <body>
-
-    <!-- Main Table -->
-    <table border="1">
-        <tr>
-            <!-- First Column -->
-            <td>
-                <!-- Nested Table 1 -->
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Nested Table 2</th>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Data 1</td>
-                            <td>Data 2</td>
-                            <td>Data 3</td>
-                        </tr>
-                        <tr>
-                            <td>Data 4</td>
-                            <td>Data 5</td>
-                            <td>Data 6</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-
-            <!-- Second Column -->
-            <td>
-                <!-- Nested Table 2 -->
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Nested Table 3</th>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Data 7</td>
-                            <td>Data 8</td>
-                            <td>Data 9</td>
-                        </tr>
-                        <tr>
-                            <td>Data 10</td>
-                            <td>Data 11</td>
-                            <td>Data 12</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-
-        <tr>
-            <!-- First Column -->
-            <td>
-                <!-- Nested Table 3 -->
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Nested Table 4</th>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Data 13</td>
-                            <td>Data 14</td>
-                            <td>Data 15</td>
-                        </tr>
-                        <tr>
-                            <td>Data 16</td>
-                            <td>Data 17</td>
-                            <td>Data 18</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-
-            <!-- Second Column -->
-            <td>
-                <!-- Nested Table 4 with List -->
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Nested Table 5</th>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>List item 1</li>
-                                    <li>List item 2</li>
-                                    <li>List item 3</li>
-                                </ul>
-                            </td>
-                            <td>Data 19</td>
-                            <td>Data 20</td>
-                        </tr>
-                        <tr>
-                            <td>Data 21</td>
-                            <td>Data 22</td>
-                            <td>Data 23</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-
-        <tr>
-            <!-- First Column -->
-            <td>
-                <!-- Nested Table 2 with Black Background -->
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Nested Table 2</th>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="background-color: black; color: white;">HTML</td>
-                            <td>Data 24</td>
-                            <td>Data 25</td>
-                        </tr>
-                        <tr>
-                            <td>Data 26</td>
-                            <td>Data 27</td>
-                            <td>Data 28</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-
-            <!-- Second Column -->
-            <td>
-                <!-- Nested Table 3 -->
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Nested Table 3</th>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Data 29</td>
-                            <td>Data 30</td>
-                            <td>Data 31</td>
-                        </tr>
-                        <tr>
-                            <td>Data 32</td>
-                            <td>Data 33</td>
-                            <td>Data 34</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </table>
-
+<h1>Tables in Tables</h1>
+<p>Your task is to create an HTML table layout with multiple nested tables and lists that closely resemble the structure shown in the image:</p>
+<img src=“https://cdn.acciojob.com/questions-data/Screenshot 2023-01-31 at 2.42.55 PM.png” alt=“Tables in Tables”>
+<p>Here are the requirements:</p>
+<table>
+<tr>
+<th>Requirement</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Nested Tables</td>
+<td>Create 4 nested tables within a main table. Follow the image for layout.</td>
+</tr>
+<tr>
+<td>Headers</td>
+<td>Each nested table should have specific headers. For example, one table should have “Nested Table 2,” “Column 1,” “Column 2” as headers.</td>
+</tr>
+<tr>
+<td>Lists</td>
+<td>Include a list in one of the tables with the items “List item 1,” “List item 2,” “List item 3.”</td>
+</tr>
+<tr>
+<td>Background Color</td>
+<td>One of the cells in the nested tables should have a black background with white text that contains “HTML.”</td>
+</tr>
+<tr>
+<td>NOTE</td>
+<td>Keep all headings and texts exactly same as they are mentioned in question</td>
+</tr>
+</table>
+<p>Ensure that your HTML code closely follows the structure in the image, and submit your completed work for evaluation.</p>
+<!–
+These are the testcases on which the solution will be checked upon
+describe(“tables-in-tables”, () => {
+beforeEach(() => {
+cy.visit(“http://localhost:3000”);
+});
+it(“Table 1”, () => {
+cy.get(“table”).should(“have.length”, 5);
+cy.get(“table”).each(($a, i) => {
+if (i == 1) {
+cy.get($a)
+.get(“th”)
+.each(($d, i) => {
+if (i == 0) {
+cy.get($d).contains(“Nested Table 2”);
+} else if (i == 1) {
+cy.get($d).contains(“Column 1”);
+} else if (i == 2) {
+cy.get($d).contains(“Column 2”);
+}
+});
+// cy.get($a).get(“td”).should(“have.length”, 2);
+}
+});
+});
+it(“Table 2”, () => {
+cy.get(“table”).each(($a, i) => {
+if (i == 2) {
+cy.get($a).get(“th”).contains(“Nested Table 1”);
+cy.get($a)
+.get(“li”)
+.each(($d, i) => {
+if (i == 0) {
+cy.get($d).contains(“List item”);
+} else if (i == 1) {
+cy.get($d).contains(“List item”);
+} else if (i == 2) {
+cy.get($d).contains(“List item”);
+}
+});
+}
+});
+});
+it(“Table 3”, () => {
+cy.get(“table”).each(($a, i) => {
+if (i == 3) {
+cy.get($a).get(“th”).contains(“Nested Table 3”);
+cy.get($a)
+.get(“td”)
+.each(($d, i) => {
+if (i == 0) {
+cy.get($d).contains(“Nested Table”);
+}
+});
+}
+});
+});
+it(“Table 4”, () => {
+cy.get(“table”).each(($a, i) => {
+if (i == 3) {
+cy.get($a).get(“th”).contains(“Nested Table 4”);
+cy.get($a)
+.get(“td”)
+.contains(“HTML”)
+.should(“have.css”, “background-color”);
+}
+});
+});
+});
+–>
 </body>
 </html>
